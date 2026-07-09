@@ -109,6 +109,6 @@ Ok "$PkgEntrypoint installed."
 
 Write-Host ""
 Ok "All set! Try running:"
-Write-Host "    $PkgEntrypoint --help"
+Write-Host "    $PkgEntrypoint help"
 Write-Host ""
 Warn "If the command isn't found, close and reopen PowerShell so PATH updates take effect."

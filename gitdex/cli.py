@@ -15,28 +15,28 @@ console = Console()
 
 
 @app.command()
-def complete(txt: str):
+def complete(textFile: str):
     """Summarize ALL your repos into a single output file."""
     init_auth()
-    full(txt)
+    full(textFile)
 
 @app.command(name="count_token")
-def countToken(txt: str):
+def countToken(textFile: str):
     """Count tokens in a given text file."""
-    with open(txt, encoding="utf-8") as f:
+    with open(textFile, encoding="utf-8") as f:
         text = f.read()
     print(f"Number of tokens this txt file has: {count_tokens(text)}")
 
 @app.command()
-def srepo(txt: str):
+def srepo(textFile: str):
     """Interactively select specific repos to summarize."""
     init_auth()
-    user_repos(txt)
+    user_repos(textFile)
 
 @app.command(name="token_by_repo")
-def tok_by_rep(txt: str):
+def tok_by_rep(textFile: str):
     """Break down token count per repo, from an existing summary file."""
-    token_by_repo(txt=txt)
+    token_by_repo(txt=textFile)
 
 @app.command()
 def test():
@@ -97,10 +97,10 @@ def help():
             "gitdex test",
         ),
         (
-            "guide",
+            "help",
             "—",
             "Shows this guide.",
-            "gitdex guide",
+            "gitdex help",
         ),
     ]
  
