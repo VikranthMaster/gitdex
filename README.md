@@ -126,8 +126,3 @@ Summary: A CLI tool that scrapes GitHub repos and generates AI summaries using a
 - Ignored file types include: compiled binaries (`.exe`, `.dll`, `.so`, `.pyc`...), media (`.jpg`, `.mp4`, `.mp3`...), fonts, lockfiles, and minified/CSS/SVG/Markdown files.
 - The default tree depth is capped at 2 levels to keep summaries compact — deeper nesting is skipped rather than fully expanded.
 
----
-
-## License
-
-Add your license of choice here.
