@@ -15,28 +15,28 @@ console = Console()
 
 
 @app.command()
-def complete(textFile: str):
+def complete(txt: str):
     """Summarize ALL your repos into a single output file."""
     init_auth()
-    full(textFile)
+    full(txt)
 
 @app.command(name="count_token")
-def countToken(textFile: str):
+def countToken(txt: str):
     """Count tokens in a given text file."""
-    with open(textFile, encoding="utf-8") as f:
+    with open(txt, encoding="utf-8") as f:
         text = f.read()
     print(f"Number of tokens this txt file has: {count_tokens(text)}")
 
 @app.command()
-def srepo(textFile: str):
+def srepo(txt: str):
     """Interactively select specific repos to summarize."""
     init_auth()
-    user_repos(textFile)
+    user_repos(txt)
 
 @app.command(name="token_by_repo")
-def tok_by_rep(textFile: str):
+def tok_by_rep(txt: str):
     """Break down token count per repo, from an existing summary file."""
-    token_by_repo(txt=textFile)
+    token_by_repo(txt)
 
 @app.command()
 def test():
