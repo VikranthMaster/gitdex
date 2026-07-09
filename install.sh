@@ -15,7 +15,7 @@
 
 set -e
 
-REPO_URL="https://github.com/VikranthMaser/gitdex.git"   # <-- change this
+REPO_URL="https://github.com/VikranthMaster/gitdex.git"   # <-- change this
 PKG_ENTRYPOINT="gitdex"
 OLLAMA_MODEL="qwen2.5:0.5b"
 
