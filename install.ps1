@@ -13,7 +13,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$RepoUrl        = "https://github.com/YOUR_USERNAME/YOUR_REPO.git"   # <-- change this
+$RepoUrl        = "https://github.com/VikranthMaster/gitdex.git"   # <-- change this
 $PkgEntrypoint  = "gitdex"
 $OllamaModel    = "qwen2.5:0.5b"
 
