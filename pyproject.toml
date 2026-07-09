@@ -1,0 +1,20 @@
+[project]
+name = "gitdex"
+version = "0.1.0"
+description = "CLI tool to scrape and summarize your GitHub repos"
+requires-python = ">=3.9"
+dependencies = [
+    "typer",
+    "questionary",
+    "PyGithub",
+    "rich",
+    "requests",
+    "tiktoken",
+]
+
+[project.scripts]
+gitdex = "gitdex.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
