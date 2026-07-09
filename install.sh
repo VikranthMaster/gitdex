@@ -152,6 +152,6 @@ ok "$PKG_ENTRYPOINT installed."
 
 echo ""
 ok "All set! Try running:"
-echo "    $PKG_ENTRYPOINT --help"
+echo "    $PKG_ENTRYPOINT help"
 echo ""
 warn "If the command isn't found, open a new terminal (or run: source ~/.bashrc / ~/.zshrc) so PATH updates take effect."
